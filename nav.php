@@ -15,7 +15,7 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <a class="navbar-brand pull-left" href="#">Drain Disk</a>
+        <a class="navbar-brand pull-left" href="#">Discozz</a>
 
         <li><a href="#">Home 🏠 <span class="sr-only">(current)</span></a></li>
         <li><a href="#">Novidades ❗</a></li>
@@ -26,7 +26,7 @@
             <li><a href="#">Anos 80</a></li>
             <li><a href="#">Anos 90</a></li>
             <li><a href="#">Anos 00</a></li>
-            <li><a href="#">Ourtos</a></li>
+            <li><a href="#">Outros</a></li>
           </ul>
         </li>
       </ul>
