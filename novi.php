@@ -2,7 +2,7 @@
 <html lang="pt-br"> <!-- indicando a linguagem que iremos usar no codigo html -->
 <head>
 
-<title>Loja Virtual</title>
+<title>Discozz</title>
 <meta charset="utf-8"> <!-- indicando o sistema de caractere utf-8 -->
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <!-- CSS -->
@@ -22,23 +22,19 @@ font-family: Century Gothic;
   font-weight: bold;
 }
 
-h1
-{
- font-family: Georgia;
- font-weight: bold;
-}
 
 </style>
 
-
+<link rel="shortcut icon" href="./Imagens/disco-32px-valen.png" type="image/x-icon">
 </head>
 <body>
-<?php include 'nav.php'; 
-      include 'cabecalho.html'; 
+<?php session_start();    
       include 'conexao.php';
+      include 'nav.php'; 
+      include 'cabecalho.html'; 
     
 
-   $consulta = $cn->query(' select nm_banda, nm_disco, vl_preco, ds_capa from vw_disco where sg_lancamento = "S";');
+   $consulta = $cn->query(' select cd_disco, nm_banda, nm_disco, vl_preco, qt_estoque, ds_capa from vw_disco where sg_lancamento = "S";');
 ?>
 
   <div class="container-fluid">
@@ -48,17 +44,20 @@ h1
         <img src="Imagens/<?php echo $exibe['ds_capa']?>.png" class="img-responsive" style="width: 100%">
         <div><h4 class="titulo"><?php echo mb_strimwidth($exibe['nm_disco'], 0, 30, '...'); ?> - <?php echo mb_strimwidth($exibe['nm_banda'], 0, 30, '...'); ?></h4></div>
          <div><h5>R$ <?php echo number_format ($exibe['vl_preco'], 2,',', '.')?></h5></div>
-          <div class="text-center"> 
-            <button class="btn btn-lg btn block btn-info">
-              <span class="glyphicon glyphicon-info-sign">Detalhes</span>
-            </button>
-          </div>
+       
+          <div class="text-center">
+              <a href="detalhes.php?cd=<?php echo $exibe['cd_disco']; ?>">
+                <button class="btn btn-lg btn block btn-info">
+                  <span class="glyphicon glyphicon-info-sign"> Detalhes</span>
+                </button>
+              </a>
+            </div>
          <div class="text-center" style = "margin-top:5px; margin-bottom:5px;"> 
           <?php if($exibe['qt_estoque'] > 0){?>
-            <button class="btn btn-lg btn block btn-danger">
+            <button class="btn btn-lg btn block btn-warning">
               <span class="glyphicon glyphicon-usd">Comprar</span>
             <?php } else {?>
-    <button class="btn btn-lg btn block btn-info" disabled>
+    <button class="btn btn-lg btn block btn-danger" disabled>
 <span class="glyphicon glyphicon-remove-circle">Indisponível</span>
 </button>
 <?php } ?>
