@@ -46,7 +46,7 @@
       <div class="row">
         <?php while ($exibe = $consulta->fetch(PDO::FETCH_ASSOC)) { ?>
           <div class="col-sm-3">
-            <img src="./Imagens/<?php echo $exibe['ds_capa'] ?>.png" class="img-responsive" style="width: 100%;">
+            <img src="./Imagens/<?php echo $exibe['ds_capa'] ?>" class="img-responsive" style="width: 100%;">
             <div>
               <h3><?php echo mb_strimwidth($exibe['nm_disco'], 0, 30, '...'); ?> - <?php echo mb_strimwidth($exibe['nm_banda'], 0, 30, '...'); ?></h3>
             </div>

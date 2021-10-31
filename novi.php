@@ -41,7 +41,7 @@ font-family: Century Gothic;
     <div class="row">
       <?php while ($exibe = $consulta->fetch(PDO::FETCH_ASSOC)) {?>
       <div class="col-sm-3">
-        <img src="Imagens/<?php echo $exibe['ds_capa']?>.png" class="img-responsive" style="width: 100%">
+        <img src="Imagens/<?php echo $exibe['ds_capa']?>" class="img-responsive" style="width: 100%">
         <div><h4 class="titulo"><?php echo mb_strimwidth($exibe['nm_disco'], 0, 30, '...'); ?> - <?php echo mb_strimwidth($exibe['nm_banda'], 0, 30, '...'); ?></h4></div>
          <div><h5>R$ <?php echo number_format ($exibe['vl_preco'], 2,',', '.')?></h5></div>
        

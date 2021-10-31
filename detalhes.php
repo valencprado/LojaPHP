@@ -52,7 +52,7 @@
             <div class="col-sm-4 col-sm-offset-1">
                 <h1>Detalhes do Produto</h1>
 
-                <img src="Imagens/<?php echo $exibir['ds_capa']; ?>.png" class="img-responsive" style="width:100%;">
+                <img src="Imagens/<?php echo $exibir['ds_capa']; ?>" class="img-responsive" style="width:100%;">
 
 
             </div>
