@@ -92,7 +92,7 @@
 
                     <div class="form-group">
 
-                        <label for="sltautor">Autor</label>
+                        <label for="sltbanda">Banda</label>
                      
                             <select class="form-control" name="sltautor">
                             <option value="">Selecione</option>
@@ -143,9 +143,9 @@
 
                     <div class="form-group">
 
-                        <label for="sltlanc">Lançamento?</label>
+                        <label for="sltnovi">Novidade?</label>
 
-                        <select class="form-control" name="sltlanc">
+                        <select class="form-control" name="sltnovi">
                             <option value="">Selecione</option>
                             <option value="S">Sim</option>
                             <option value="N">Não</option>
