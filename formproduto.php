@@ -66,7 +66,7 @@
 
                 <h2>Inclusão de Discos</h2>
 
-                <form method="post" action="insprod.php" name="incluiProd" enctype="multipart/form-data">
+                <form method="post" action="insdisco.php" name="incluiProd" enctype="multipart/form-data">
 
 
 
@@ -103,13 +103,6 @@
 
                     </div>
 
-                    <div class="form-group">
-
-                        <label for="txtpag">Número de páginas</label>
-
-                        <input type="number" class="form-control" name="txtpag" required id="txtpag">
-
-                    </div>
 
 
                     <div class="form-group">
