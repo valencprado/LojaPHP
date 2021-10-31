@@ -3,14 +3,13 @@
 include 'conexao.php';  // include com arquivo de conexao
 
 //variáveis que vão receber os dados do formulário que esta na pagina formProduto
-$isbn = $_POST['txtisbn'];
+
 $cd_cat = $_POST['sltcat'];  // recebendo o valor do campo select, valor numérico
 $nome_livro = $_POST['txtlivro'];
-$cd_autor = $_POST['sltautor']; // recebendo o valor do campo select, valor numérico
-$nopag = $_POST['txtpag'];
+$cd_banda = $_POST['sltbanda']; // recebendo o valor do campo select, valor numérico
 $preco = $_POST['txtpreco'];
 $qtde = $_POST['txtqtde'];
-$resumo = $_POST['txtresumo'];
+$descricao = $_POST['txtdescricao'];
 $lanc = $_POST['sltlanc'];
 
 $remover1='.';  // criando variável e atribuindo o valor de ponto para ela
@@ -36,7 +35,7 @@ $img_nome1 = md5(uniqid(time())).".".$extencao1[1];
 
 try {  // try para tentar inserir
 	
-	$inserir=$cn->query("INSERT INTO tbl_livro(no_isbn, cd_categoria, nm_livro, cd_autor, no_pag, vl_preco, qt_estoque, ds_resumo_obra, ds_capa, sg_lancamento) VALUES ('$isbn', '$cd_cat', '$nome_livro', '$cd_autor', '$nopag', '$preco', '$qtde', '$resumo', '$img_nome1', '$lanc')");
+	$inserir=$cn->query("INSERT INTO tbl_disco(, cd_categoria, nm_livro, cd_banda, vl_preco, qt_estoque, ds_resumo_disco, ds_capa, sg_lancamento) VALUES ('$isbn', '$cd_cat', '$nome_livro', '$cd_autor', '$nopag', '$preco', '$qtde', '$resumo', '$img_nome1', '$lanc')");
 	
 	
 }catch(PDOException $e) {  // se houver algum erro explodir na tela a mensagem de erro
