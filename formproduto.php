@@ -94,7 +94,7 @@
 
                         <label for="sltbanda">Banda</label>
                      
-                            <select class="form-control" name="sltautor">
+                            <select class="form-control" name="sltbanda">
                             <option value="">Selecione</option>
                             <?php while ($listaBanda = $consultaBanda->fetch(PDO::FETCH_ASSOC)) { ?>
                                 <option value="<?php echo $listaBanda['cd_banda']; ?>"><?php echo $listaBanda['nm_banda']; ?></option>
