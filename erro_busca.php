@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Minha Loja - Logon de usuário</title>
+<title>Discozz - Logon de usuário</title>
 	
 <meta name="viewport" content="width=device-width, initial-scale=1">
 	
