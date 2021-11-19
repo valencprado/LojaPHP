@@ -69,7 +69,7 @@
 					Alterar / Excluir Produto
 					
 				</button>
-				</a>
+				</a> 
                 <br />
 				
 				<button type="submit" class="btn btn-block btn-lg btn-success">

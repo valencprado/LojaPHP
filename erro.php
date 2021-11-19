@@ -23,6 +23,7 @@
             margin-bottom: 0;
         }
     </style>
+     <link rel="shortcut icon" href="./Imagens/disco-32px-valen.png" type="image/x-icon">
 </head>
 
 <body>

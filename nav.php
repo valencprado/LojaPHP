@@ -49,7 +49,7 @@
       </form>
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#">Contato 📞</a></li>
-
+        <li><a href="carrinho.php">Carrinho 🛒</a></li>
       <?php 
       if(empty($_SESSION['ID'])) { ?>
         <li><a href="formlogin.php"><span class="glyphicon glyphicon-log-in"> Login</a> </li>
@@ -59,7 +59,7 @@
             $consulta_usuario = $cn->query("select nome_usuario from tbl_usuario where cd_usuario = '$_SESSION[ID]'");
             $exibe_usuario = $consulta_usuario->fetch(PDO::FETCH_ASSOC);
           ?>
-           <li><a href="#"><span class="glyphicon glyphicon-user"></span> <?php echo $exibe_usuario['nome_usuario']; ?></a></li>
+           <li><a href="areauser.php"><span class="glyphicon glyphicon-user"></span> <?php echo $exibe_usuario['nome_usuario']; ?></a></li>
             <li><a href="sair.php" ><span class="glyphicon glyphicon-log-out"></span> Sair </a></li>
 
           <?php } else { ?>

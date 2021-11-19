@@ -1,3 +1,5 @@
+<link rel="shortcut icon" href="./Imagens/disco-32px-valen.png" type="image/x-icon">
+
 <?php
 
 include 'conexao.php';  // incluindo a conexao
@@ -87,7 +89,3 @@ try {
 	echo $e->getMessage();  
 	
 }
-
-
-
-?>

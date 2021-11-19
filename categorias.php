@@ -54,17 +54,20 @@
 
            <div class="text-center">
               <a href="detalhes.php?cd=<?php echo $exibe['cd_disco']; ?>">
-                <button class="btn btn-lg btn block btn-info">
-                  <span class="glyphicon glyphicon-info-sign"> Detalhes</span>
+                <button class="btn btn-lg btn block" >
+                  <span class="glyphicon glyphicon-info-sign"style="background-color: #ffff66; color:white;"> Detalhes</span>
                 </button>
                 </a>
             </div>
             <div class="text-center" style="margin-top:5px; margin-bottom:5px;">
               <?php if ($exibe['qt_estoque'] > 0) { ?>
-                <button class="btn btn-lg btn block btn-warning">
+                <button class=" btn-lg btn block" style="background-color: #063970; color:azure;" >
+                <a href="carrinho.php?cd=<?php echo $exibe['cd_disco']; ?>">
                   <span class="glyphicon glyphicon-usd">Comprar</span>
+                </a>
+                </button>
                 <?php } else { ?>
-                  <button class="btn btn-lg btn block btn-danger" disabled>
+                  <button class=" btn-lg block" style="background-color:crimson;" disabled>
                     <span class="glyphicon glyphicon-remove-circle">Indisponível</span>
                   </button>
                 <?php } ?>
