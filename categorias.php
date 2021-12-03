@@ -17,15 +17,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel='stylesheet' href="/css/bootstrap.min.css">
     <link rel='stylesheet' href="/css/style.css">
-    <style type="text/css">
-      .navbar {
-        margin-bottom: 0;
-        font-family: Century Gothic;
-        font-weight: bold;
-      }
-
-      
-    </style>
+   <link href="style.css" rel="stylesheet" type="text/css">
 
 <link rel="shortcut icon" href="./Imagens/disco-32px-valen.png" type="image/x-icon">
   </head>
@@ -54,21 +46,21 @@
 
            <div class="text-center">
               <a href="detalhes.php?cd=<?php echo $exibe['cd_disco']; ?>">
-                <button class="btn btn-lg btn block" >
-                  <span class="glyphicon glyphicon-info-sign"style="background-color: #ffff66; color:white;"> Detalhes</span>
+                <button class="btn btn-lg btn block btn-details" >
+                Detalhes
                 </button>
                 </a>
             </div>
             <div class="text-center" style="margin-top:5px; margin-bottom:5px;">
               <?php if ($exibe['qt_estoque'] > 0) { ?>
-                <button class=" btn-lg btn block" style="background-color: #063970; color:azure;" >
+                <button class=" btn-lg btn block btn-buy" >
                 <a href="carrinho.php?cd=<?php echo $exibe['cd_disco']; ?>">
-                  <span class="glyphicon glyphicon-usd">Comprar</span>
+                  <span>Comprar</span>
                 </a>
                 </button>
                 <?php } else { ?>
-                  <button class=" btn-lg block" style="background-color:crimson;" disabled>
-                    <span class="glyphicon glyphicon-remove-circle">Indisponível</span>
+                  <button class=" btn btn-lg block btn btn-indisponible" disabled>
+                 <span>Indisponível</span>
                   </button>
                 <?php } ?>
             </div>
@@ -76,6 +68,7 @@
 
           </div>
       </div>
+    </div>
       <?php } ?>
     </div>
     </div>

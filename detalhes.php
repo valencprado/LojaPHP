@@ -18,12 +18,7 @@
 
     <!--ícone de:-->
     <link rel="shortcut icon" href="./Imagens/disco-32px-valen.png" type="image/x-icon">
-
-    <style>
-        .navbar {
-            margin-bottom: 0;
-        }
-    </style>
+    <link href="style.css" rel="stylesheet" type="text/css">
 
 
 
@@ -39,7 +34,7 @@
     if(!empty($_GET['cd'])){
     $cd_disco = $_GET['cd'];
 
-    $consulta = $cn->query(" select * from tbl_disco where cd_disco = '$cd_disco' ");
+    $consulta = $cn->query(" select * from tbl_disco where cd_disco = '$cd_disco'");
     $exibir = $consulta->fetch(PDO::FETCH_ASSOC);
     }
     else{
@@ -59,15 +54,13 @@
 
             <div class="col-sm-7">
                 <h1><?php echo $exibir['nm_disco']; ?></h1>  
-                <br />
-
-                <br />
+                <br /><br />
                 <p><?php echo $exibir['ds_resumo_disco']; ?></p>
                 <br />  <br />
                 <p style="font-weight:bold; font-size: 30px;">R$ <?php echo number_format($exibir['vl_preco'], 2, ',', '.') ?></p>
-               
+                <a href="carrinho.php?cd=<?php echo $exibe['cd_disco']; ?>">
                 <button class="btn btn-lg btn-success">Comprar</button>
-
+               </a>
             </div>
         </div>
 

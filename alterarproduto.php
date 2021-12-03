@@ -1,5 +1,5 @@
 <link rel="shortcut icon" href="./Imagens/disco-32px-valen.png" type="image/x-icon">
-
+<link href="style.css" rel="stylesheet" type="text/css">
 <?php
 
 include 'conexao.php';  // incluindo a conexao

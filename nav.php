@@ -1,17 +1,5 @@
 
-
-<style type="text/css">
-  .btn-sm{
-    background-color: lavender;
-  }
-  
-      .navbar {
-        margin-bottom: 0;
-        font-family: Century Gothic;
-        font-weight: bold;
-      }
-  
-</style>
+<link href="style.css" rel="stylesheet" type="text/css">
 <nav class="navbar navbar-inverse" style="background-color: #001049;">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
@@ -26,7 +14,7 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <a class="navbar-brand pull-left" href="#">Discozz</a>
+        <a style="font-family:Gothical;" class="navbar-brand pull-left" href="#">Discozz</a>
 
         <li><a href="index.php">Home 🏠 <span class="sr-only">(current)</span></a></li>
         <li><a href="novi.php">Novidades ❗</a></li>

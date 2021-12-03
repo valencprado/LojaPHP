@@ -15,11 +15,7 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	
 <!--margin-bottom adicionada pelo professor, deixe como quiser-->	
-<style>
-
-.navbar{
-	margin-bottom: 0;
-}
+<link href="style.css" rel="stylesheet" type="text/css">
 	
 	
 </style>

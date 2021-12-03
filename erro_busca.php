@@ -13,17 +13,7 @@
 
 <!-- Latest compiled JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	
-	
-<style>
-
-.navbar{
-	margin-bottom: 0;
-}
-	
-	
-</style>
-	
+<link href="style.css" rel="stylesheet" type="text/css">
 	
 </head>
 

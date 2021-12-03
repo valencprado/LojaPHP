@@ -17,14 +17,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel='stylesheet' href="/css/bootstrap.min.css">
     <link rel='stylesheet' href="/css/style.css">
-    <style type="text/css">
-      .navbar {
-        margin-bottom: 0;
-       
-      }
-
-     
-    </style>
+    <link href="style.css" rel="stylesheet" type="text/css">
 
     <link rel="shortcut icon" href="./Imagens/disco-32px-valen.png" type="image/x-icon">
   </head>
@@ -56,8 +49,8 @@
             <!--detalhes -->
             <div class="text-center">
               <a href="detalhes.php?cd=<?php echo $exibe['cd_disco']; ?>">
-                <button class="btn btn-lg btn block btn-info">
-                  <span class="glyphicon glyphicon-info-sign"> Detalhes</span>
+                <button class="btn btn-lg" style="background-color: #ffff66; color:black; border:none;">
+                  <span> Detalhes</span>
                 </button>
               </a>
             </div>
@@ -65,14 +58,14 @@
             <div class="text-center" style="margin-top:5px; margin-bottom:5px;">
               <?php if ($exibe['qt_estoque'] > 0) { ?>
                 <a href="carrinho.php?cd=<?php echo $exibe['cd_disco']; ?>">
-                <button class="btn btn-lg btn block btn-warning">
-                  <span class="glyphicon glyphicon-usd"> Comprar</span>
+                <button class="btn btn-lg btn block"style="background-color: #063970; color:azure;">
+                  <span>Comprar</span>
                 </button>
               </a>
                   <!-- botão de comprar indisponível -->
                 <?php } else { ?>
                   <button class="btn btn-lg btn block"style="background-color:crimson;" disabled>
-                    <span class="glyphicon glyphicon-remove-circle"> Indisponível</span>
+                    <span class="glyphicon glyphicon-remove-circle">Indisponível</span>
                   </button>
                 <?php } ?>
             </div>
@@ -81,6 +74,7 @@
         <?php } ?>
       </div>
     </div>
+  
 
     <?php include 'rodape.html'; ?>
   </body>

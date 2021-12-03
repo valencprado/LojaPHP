@@ -1,3 +1,4 @@
+<link href="style.css" rel="stylesheet" type="text/css">
 <div class="container-fluid">
 	
 	<div class="row text-center" style="margin-top: 15px;">

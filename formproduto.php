@@ -27,12 +27,7 @@
 
         });
     </script>
-
-    <style>
-        .navbar {
-            margin-bottom: 0;
-        }
-    </style>
+<link href="style.css" rel="stylesheet" type="text/css">
 
 
 

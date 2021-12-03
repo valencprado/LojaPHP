@@ -27,15 +27,7 @@ $('#preco').mask('000.000.000.000.000,00', {reverse: true});
 });
 	
 </script>
-	
-<style>
-
-.navbar{
-	margin-bottom: 0;
-}
-	
-	
-</style>
+<link href="style.css" rel="stylesheet" type="text/css">
 	
 	
 	
