@@ -1,0 +1,64 @@
+
+
+	@font-face {
+        font-family:"monofonto";
+        src: url(.Imagens/monofonto.otf);
+    }
+    .btn
+    {
+        font-family:"monofonto";
+    }
+    .navbar{
+		margin-bottom: 0;
+	}
+	
+    .tabela
+    {
+        font-weight: bold;
+        font-family: Century Gothic;
+    }
+
+    .btn-indisponible
+    { background-color:crimson; 
+        color: #FFF;
+
+    }
+    .btn-buy
+    { background-color: #043b76; 
+        color:azure;
+        
+
+    }
+    .btn-details
+    {
+        background-color: #ffff66; 
+        color:black;
+
+    }
+    
+    .btn.custom-btn {
+        background-color: lightcyan;
+    }
+    .btn-sm{
+        background-color: lavender;
+      }
+      @font-face{
+        font-family:"Gothical";
+ src: url(./Imagens/Bad\ Boys.ttf);
+
+    }
+    .navbar-collapse
+    {
+        font-family: Century Gothic;
+        font-weight: bold;
+    }
+    .btn-enter
+    {
+background-color: greenyellow;
+    }
+    .btn-detalhes-compra
+    {
+    background-color:#f57842; 
+    color:black; 
+    border:none;
+    }
